@@ -13,6 +13,38 @@
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 
+        <style>
+            body{
+                overflow-x:hidden;
+            }
+    div.scrollmenu {
+        background-color: transparent;
+        overflow: auto;
+        white-space: nowrap;
+        align-items: center;
+
+    }
+
+    div.scrollmenu a {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 14px;
+        padding-right: 30px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    div.scrollmenu a:hover {
+        background-color: transparent;
+    }
+    div.scrollmenu img {
+        max-height:100px;
+        padding-left: 50px;
+
+    }
+    </style>
+
         <script>
             function fisica() {
                 removeClass(document.getElementById("juridica"),"primary")
@@ -129,7 +161,7 @@
 												<input type="text" name="name" id="name" value="" placeholder="E-mail" />
 											</div>
 											<div class="col-6 col-12-xsmall">
-												<input type="password" name="email" id="email" value="" placeholder="Senha" />
+												<input type="password" name="password" id="password" value="" placeholder="Senha" />
 											</div>
 											<div class="col-12">
 												<select name="category" id="category">
@@ -245,7 +277,7 @@
                   <img src="images/bradesco.png" style="max-height: 75px">
                   <img src="images/sansung.png" style="max-height: 75px">
                   <img src="images/logo-big-data.png" style="max-height: 75px">
-                  <img src="images/arrow.png" style="max-height: 75px">
+                  <img src="images/arrow.png" style="max-height: 30px">
                 </div>
              </div>
         </section>
