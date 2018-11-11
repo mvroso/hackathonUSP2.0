@@ -14,22 +14,37 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
-
+		<script>
+		  document.body.classList.add('fade');
+		</script>
 		<!-- Header -->
-			<header id="header">
-				<a class="logo" href="index.html">Amigos da USP</a>
+			<header id="header" style="">
+				<a class="logo" href="index.html">AMIGOS DA USP</a>
+
 				<nav>
-					<a href="#menu">Menu</a>
+					<a href="index.html">Home</a>
+					<a class="selected" href="generic.html">Sobre</a>
+					<a href="elements.html" align="center" style=" min-width: 150px; font-size: 1rem; border:1; border-color: #DDD!important">Doe Aqui</a>
+					<a href="#menu">login</a>
 				</nav>
+
 			</header>
 
 		<!-- Nav -->
-			<nav id="menu">
+			<nav id="menu" style="padding-bottom: 0!important">
 				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="elements.html">Doe Aqui!</a></li>
-					<li><a href="generic.html">Sobre</a></li>
-                    <li><a href="perfil.html">Perfil</a></li>
+					<a href="elements.html" class="icon fa-user" style="font-size: 5rem; color: #DDD; margin-left: 40%"><span class="label">Icon</span></a>
+					<div ">
+					<form>
+					<input type="text" name="name" id="name" value="" placeholder="E-mail" />
+					<input type="text" name="pass" id="pass" value="" placeholder="Senha" style="margin-top: 5px" />
+					<div>
+				 		<li><input id="entrar" type="submit" value="Entrar" class="" style="" /></li>
+				 		<li><input id="cadastro" type="submit" value="cadastre-se"/></li>
+					</div>
+
+					</form>
+					</div>
 				</ul>
 			</nav>
 
@@ -57,7 +72,7 @@
 									<h3>Ciência e Tecnologia</h3>
 								</header>
 								<h4>
-									Tornar possível a realização de mais projetos de pesquisa científica, ampliando a capacidade acadêmica da Universidade e expandindo os limites do conhecimento. 
+									Tornar possível a realização de mais projetos de pesquisa científica, ampliando a capacidade acadêmica da Universidade e expandindo os limites do conhecimento.
 								</h4>
 							</div>
 						</section>
@@ -85,37 +100,36 @@
 			</section>
 
 	<!-- Footer -->
-	<footer id="footer">
-		<div class="inner">
-			<div class="content">
-				<section>
-					<h3>Accumsan montes viverra</h3>
-					<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
-				</section>
-				<section>
-					<h4>Sem turpis amet semper</h4>
-					<ul class="alt">
-						<li><a href="#">Dolor pulvinar sed etiam.</a></li>
-						<li><a href="#">Etiam vel lorem sed amet.</a></li>
-						<li><a href="#">Felis enim feugiat viverra.</a></li>
-						<li><a href="#">Dolor pulvinar magna etiam.</a></li>
-					</ul>
-				</section>
-				<section>
-					<h4>Magna sed ipsum</h4>
-					<ul class="plain">
-						<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
-						<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
-						<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
-						<li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
-					</ul>
-				</section>
-			</div>
-			<div class="copyright">
-				&copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>.
-			</div>
-		</div>
-	</footer>
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h3>Amigos da USP</h3>
+							<p>Com o intuito de fomentar às doações na Universidade de São Paulo, foi criada a plataforma Amigos da USP, em que é possível acompanhar os avanços em Ciência, Permanência e Cultura da Universidade.</p>
+						</section>
+						<section>
+							<h4>Contato</h4>
+							<ul class="alt">
+								<li><a href="#">Telefone: (11) 3875-5840</a></li>
+								<li><a href="#">E-mail: faq@adu.com.br</a></li>
+								<li><a href="#">Endereço: Rua do Matão, 3100</a></li>
+							</ul>
+						</section>
+						<section>
+							<h4>Nossa Redes</h4>
+							<ul class="plain">
+								<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+								<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+								<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="copyright">
+						&copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>.
+					</div>
+				</div>
+			</footer>
+
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
