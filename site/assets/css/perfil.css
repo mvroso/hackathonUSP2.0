@@ -41,4 +41,16 @@
           #perfil > ul.links > li > a:hover {
             color: #ffffff; }
 
+#nome, #nome3, #nome2{
+    display: block;
+}
+#nome, #cara{
+    display: inline;
+}
+
+
+
+
+
+
   
