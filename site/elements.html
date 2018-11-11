@@ -12,17 +12,53 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
         <script>
-            function mostrar(elemento){
-                var display = document.getElementById(elemento).style.display;
-                if(display == "none"){
-                    document.getElementById(elemento).style.display = 'block';
-                }
-                else{
-                    document.getElementById(elemento).style.display = 'none';
-                }    
+            function fisica() {
+                removeClass(document.getElementById("juridica"),"primary")
+                addClass(document.getElementById("fisica"),"primary");
+
+                document.getElementById("formsfisica").style.display = "block";
+                document.getElementById("formsjuridica").style.display = "none";
+
+
             }
+            function juridica() {
+                addClass(document.getElementById("juridica"),"primary")
+                removeClass(document.getElementById("fisica"),"primary");
+                var x = document.getElementById("formsjuridica");
+                document.getElementById("formsfisica").style.display = "none";
+                document.getElementById("formsjuridica").style.display = "block";
+            }
+
+            function hasClass(el, className)
+            {
+                if (el.classList)
+                    return el.classList.contains(className);
+                return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'));
+            }
+
+            function addClass(el, className)
+            {
+                if (el.classList)
+                    el.classList.add(className)
+                else if (!hasClass(el, className))
+                    el.className += " " + className;
+            }
+
+            function removeClass(el, className)
+            {
+                if (el.classList)
+                    el.classList.remove(className)
+                else if (hasClass(el, className))
+                {
+                    var reg = new RegExp('(\\s|^)' + className + '(\\s|$)');
+                    el.className = el.className.replace(reg, ' ');
+                }
+            }
+
         </script>
+
 	</head>
 	<body class="is-preload">
 
@@ -55,43 +91,45 @@
 
 					<!-- Elements -->
                         <h1 style="text-align: center">Você é:</h1>
+                        <!-- <div class="btn-group btn-group-sm" role="group"> -->
                         <ul class="actions fit">
-								<li><a href="#" class="button primary fit small" onclick="mostrar('seuformulario')">Pessoa Jurídica</a></li>
-								<li><a href="#" class="button fit small" onclick="mostrar('seuformulario1')">Pessoa Física</a></li>
+                            <li><a id="fisica" class="button fit small" onclick="fisica()" >Pessoa Física</a></li>
+							<li><a id="juridica" class="button fit small" onclick="juridica()" >Pessoa Jurídica</a></li>
 				        </ul>
+                        <!-- </div> -->
 						<div class="row">
 							<div class="col-6 col-12-medium">
 								<!-- Text -->
                                 <ul>
 									<h2>Pessoa Física</h2>
 									<h3>Para quem você pode doar?</h3>
-									<ul> <p>Alunos e docentes com projetos inscritos nas categorias:</p> 
+									<ul> <p>Alunos e docentes com projetos inscritos nas categorias:</p>
 								        <li><b>Bolsas</b> de permanência para graduação e pós-graduação;</li>
                                         <li>Projetos de <b>pesquisa científica</b>;</li>
                                         <li>Infraestrutura e <b>reformas</b> de salas e laboratórios;</li>
                                         <li>Projetos <b>culturais</b> e artísticos.</li>
                                     </ul>
                                 </ul>
-                                <ul style ="background-color: #281bce">
-                                    <h2 style="color:white !important">Pessoa Jurídica</h2>
-									<ul  style ="color: white" > <p>Incentive o desenvolvimento tecnológico e cultural com projetos inscritos nas categorias:</p> 
-								        <li><b  style ="color: white" >Bolsas</b> de permanência para graduação e pós-graduação;</li>
-                                        <li>Projetos de <b  style ="color: white" >pesquisa científica</b>;</li>
-                                        <li>Infraestrutura e <b  style ="color: white" >reformas</b> de salas e laboratórios;</li>
-                                        <li>Projetos <b  style ="color: white" >culturais</b> e artísticos.</li>
+                                <ul >
+                                    <h2 ">Pessoa Jurídica</h2>
+									<ul > <p>Incentive o desenvolvimento tecnológico e cultural com projetos inscritos nas categorias:</p>
+								        <li><b  >Bolsas</b> de permanência para graduação e pós-graduação;</li>
+                                        <li>Projetos de <b  >pesquisa científica</b>;</li>
+                                        <li>Infraestrutura e <b  >reformas</b> de salas e laboratórios;</li>
+                                        <li>Projetos <b  >culturais</b> e artísticos.</li>
                                     </ul>
                                 </ul>
                             </div>
 							<div class="col-6 col-12-medium">
 								<!-- Form -->
-									<form method="post" action="#" id="seuformulario" style="display: none">
+									<form method="post" action="#" id="formsfisica" style="display: none">
                                         <h2>Dados</h2>
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall">
 												<input type="text" name="name" id="name" value="" placeholder="E-mail" />
 											</div>
 											<div class="col-6 col-12-xsmall">
-												<input type="email" name="email" id="email" value="" placeholder="Senha" />
+												<input type="password" name="email" id="email" value="" placeholder="Senha" />
 											</div>
 											<div class="col-12">
 												<select name="category" id="category">
@@ -137,7 +175,7 @@
 											</div>
 										</div>
 									</form>
-                                    <form method="post" action="#" id="seuformulario1" style="display: none">
+                                    <form method="post" action="#" id="formsjuridica" style="display: none">
                                         <h2>Dados</h2>
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall">
@@ -249,6 +287,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
 
 	</body>
 </html>
