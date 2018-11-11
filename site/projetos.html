@@ -32,42 +32,70 @@
 		<![endif]-->
 			<script type="text/javascript">'use strict';var avia_is_mobile=!1;if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)&&'ontouchstart' in document.documentElement){avia_is_mobile=!0;document.documentElement.className+=' avia_mobile '}
 	else{document.documentElement.className+=' avia_desktop '};document.documentElement.className+=' js_active ';(function(){var e=['-webkit-','-moz-','-ms-',''],n='';for(var t in e){if(e[t]+'transform' in document.documentElement.style){document.documentElement.className+=' avia_transform ';n=e[t]+'transform'};if(e[t]+'perspective' in document.documentElement.style)document.documentElement.className+=' avia_transform3d '};if(typeof document.getElementsByClassName=='function'&&typeof document.documentElement.getBoundingClientRect=='function'&&avia_is_mobile==!1){if(n&&window.innerHeight>0){setTimeout(function(){var e=0,o={},a=0,t=document.getElementsByClassName('av-parallax'),i=window.pageYOffset||document.documentElement.scrollTop;for(e=0;e
-		
+
 				<t.length;e++){t[e].style.top='0px';o=t[e].getBoundingClientRect();a=Math.ceil((window.innerHeight+i-o.top)*0.3);t[e].style[n]='translate(0px, '+a+'px)';t[e].style.top='auto';t[e].className+=' enabled-parallax '}},50)}}})();
 
-	
+
 				</script>
 				<style type='text/css'>
 	@font-face {font-family: 'entypo-fontello'; font-weight: normal; font-style: normal;
 	src: url('https://kriesi.at/themes/enfold/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.eot');
-	src: url('https://kriesi.at/themes/enfold/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.eot?#iefix') format('embedded-opentype'), 
-	url('https://kriesi.at/themes/enfold/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.woff') format('woff'), 
-	url('https://kriesi.at/themes/enfold/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.ttf') format('truetype'), 
+	src: url('https://kriesi.at/themes/enfold/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.eot?#iefix') format('embedded-opentype'),
+	url('https://kriesi.at/themes/enfold/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.woff') format('woff'),
+	url('https://kriesi.at/themes/enfold/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.ttf') format('truetype'),
 	url('https://kriesi.at/themes/enfold/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.svg#entypo-fontello') format('svg');
 	} #top .avia-font-entypo-fontello, body .avia-font-entypo-fontello, html body [data-av_iconfont='entypo-fontello']:before{ font-family: 'entypo-fontello'; }
+
+	#entrar{
+		height: 40px !important; box-shadow: none!important; background-color: 000!important; width: 100%; margin-top: 5px;
+		background-color: #121212;
+		border-color: rgba(0,0,0,0.25);
+	}
+	#cadastro{
+		height: 40px !important; border: 0!important; box-shadow: none!important; background-color: 000!important; width: 100%; margin-top: 5px;
+		background-color: #121212;
+
+		border-color: rgba(0,0,0,0.25);
+	}
+	#cadastro:hover, #entrar:hover{
+		background-color: #222!important;
+		color: #FFF!important;
+
+	}
 </style>
 			</head>
 			<body class="is-preload">
 				<!-- Header -->
-				<header id="header">
-					<a class="logo" href="index.html">Industrious</a>
-					<nav>
-						<a href="#menu">Menu</a>
-					</nav>
-				</header>
-				<!-- Nav -->
-				<nav id="menu">
-					<ul class="links">
-						<li>
-							<a href="index.html">Home</a>
-						</li>
-						<li>
-							<a href="elements.html">Elements</a>
-						</li>
-						<li>
-							<a href="generic.html">Generic</a>
-						</li>
-					</ul>
+			<header id="header" style="">
+				<a class="logo" href="index.html">AMIGOS DA USP</a>
+
+				<nav>
+					<a href="index.html">Home</a>
+					<a class="selected" href="projetos.html">Projetos</a>
+					<a href="generic.html">Sobre</a>
+					<a href="elements.html" align="center" style=" min-width: 150px; font-size: 1rem; border:1; border-color: #DDD!important">Doe Aqui</a>
+					<a href="#menu">login</a>
+				</nav>
+
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu" style="padding-bottom: 0!important">
+				<ul class="links">
+					<a href="elements.html" class="icon fa-user" style="font-size: 5rem; color: #DDD; margin-left: 40%"><span class="label">Icon</span></a>
+					<div ">
+					<form action="perfilexemplo.html">
+					<input type="text" name="name" id="name" value="" placeholder="E-mail" />
+					<input type="text" name="pass" id="pass" value="" placeholder="Senha" style="margin-top: 5px" />
+					<div>
+				 		<li><input id="entrar" type="submit" value="Entrar" class="" style="" /></li>
+				 		<li><input id="cadastro" type="submit" value="cadastre-se"/></li>
+					</div>
+
+					</form>
+					</div>
+				</ul>
+			</nav>
 				</nav>
 				<!-- Heading -->
 				<div id="heading" >
@@ -126,7 +154,7 @@
 											</p>
 											<div id="toggle-id-25-container" class="toggle_wrap "  >
 												<div class="toggle_content invers-color "  itemprop="text"   >
-													<p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. 
+													<p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
 														<strong>Vivamus</strong> elementum semper nisi. Aenean vulputate eleifend tellus.
 													</p>
 												</div>
@@ -143,7 +171,7 @@
 											</p>
 											<div id="toggle-id-26-container" class="toggle_wrap "  >
 												<div class="toggle_content invers-color "  itemprop="text"   >
-													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et 
+													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
 														<strong>magnis</strong> dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
 													</p>
 												</div>
@@ -183,32 +211,32 @@
 										<li>
 											<a href="#">
 												<i class="icon fa-twitter">&nbsp;</i>Twitter
-							
+
 											</a>
 										</li>
 										<li>
 											<a href="#">
 												<i class="icon fa-facebook">&nbsp;</i>Facebook
-							
+
 											</a>
 										</li>
 										<li>
 											<a href="#">
 												<i class="icon fa-instagram">&nbsp;</i>Instagram
-							
+
 											</a>
 										</li>
 									</ul>
 								</section>
 							</div>
 							<div class="copyright">
-				&copy; Untitled. Photos 
-				
-								<a href="https://unsplash.co">Unsplash</a>, Video 
-				
+				&copy; Untitled. Photos
+
+								<a href="https://unsplash.co">Unsplash</a>, Video
+
 								<a href="https://coverr.co">Coverr</a>.
 
-			
+
 							</div>
 						</div>
 					</footer>
@@ -257,53 +285,53 @@
       });
   </script>
 					<script type='text/javascript'>
-         /* 
-         
-						<![CDATA[ */  
+         /*
+
+						<![CDATA[ */
          var avia_framework_globals = avia_framework_globals || {};
          avia_framework_globals.frameworkUrl = 'https://kriesi.at/themes/enfold/wp-content/themes/enfold/framework/';
          avia_framework_globals.installedAt = 'https://kriesi.at/themes/enfold/wp-content/themes/enfold/';
          avia_framework_globals.ajaxurl = 'https://kriesi.at/themes/enfold/wp-admin/admin-ajax.php';
-         /* ]]> */ 
+         /* ]]> */
 
-     
+
 					</script>
 					<script type='text/javascript' src='https://kriesi.at/themes/enfold/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
 					<script type='text/javascript'>
-         /* 
-         
+         /*
+
 						<![CDATA[ */
          var wc_add_to_cart_params = {"ajax_url":"\/themes\/enfold\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/themes\/enfold\/shortcodes\/toggles-accordions\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/kriesi.at\/themes\/enfold\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
          /* ]]> */
 
-     
+
 					</script>
 					<script type='text/javascript'>
-         /* 
-         
+         /*
+
 						<![CDATA[ */
          var woocommerce_params = {"ajax_url":"\/themes\/enfold\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/themes\/enfold\/shortcodes\/toggles-accordions\/?wc-ajax=%%endpoint%%"};
          /* ]]> */
 
-     
+
 					</script>
 					<script type='text/javascript'>
-         /* 
-         
+         /*
+
 						<![CDATA[ */
          var wc_cart_fragments_params = {"ajax_url":"\/themes\/enfold\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/themes\/enfold\/shortcodes\/toggles-accordions\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments_8b0d0344e88e8beec2910da5a6ab0787"};
          /* ]]> */
 
-     
+
 					</script>
 					<script type='text/javascript' src='https://kriesi.at/themes/enfold/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
 					<script type='text/javascript'>
-         /* 
-         
+         /*
+
 						<![CDATA[ */
          var wc_add_to_cart_params = {"ajax_url":"\/themes\/enfold\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/themes\/enfold\/shortcodes\/toggles-accordions\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/kriesi.at\/themes\/enfold\/cart\/","is_cart":"","cart_redirect_after_add":"no"};var woocommerce_params = {"ajax_url":"\/themes\/enfold\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/themes\/enfold\/shortcodes\/toggles-accordions\/?wc-ajax=%%endpoint%%"};var wc_cart_fragments_params = {"ajax_url":"\/themes\/enfold\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/themes\/enfold\/shortcodes\/toggles-accordions\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments_8b0d0344e88e8beec2910da5a6ab0787"};
          /* ]]> */
-     
+
 					</script>
 					<script type='text/javascript' src='https://kriesi.at/themes/enfold/wp-content/uploads/sites/37/dynamic_avia/avia-footer-scripts-57d5a849c35791a321de96dd89f43203.js'></script>
 					<script>
