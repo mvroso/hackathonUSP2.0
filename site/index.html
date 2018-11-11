@@ -43,6 +43,21 @@
 	div.scrollmenu img {
 		max-height:100px;
 		padding-left: 50px;
+	}
+	#entrar{
+		height: 40px !important; box-shadow: none!important; background-color: 000!important; width: 100%; margin-top: 5px;
+		background-color: #121212;
+		border-color: rgba(0,0,0,0.25);
+	}
+	#cadastro{
+		height: 40px !important; border: 0!important; box-shadow: none!important; background-color: 000!important; width: 100%; margin-top: 5px;
+		background-color: #121212;
+
+		border-color: rgba(0,0,0,0.25);
+	}
+	#cadastro:hover, #entrar:hover{
+		background-color: #222!important;
+		color: #FFF!important;
 
 	}
 	</style>
@@ -54,18 +69,29 @@
 				<a class="logo" href="index.html">AMIGOS DA USP</a>
 
 				<nav>
-					<a href="elements.html" align="center" style="z-index: 1; min-width: 150px; font-size: 1rem">Doe já</a>
-					<a href="#menu">Menu</a>
+					<a class="selected" href="index.html">Home</a>
+					<a href="generic.html">Sobre</a>
+					<a href="elements.html" align="center" style=" min-width: 150px; font-size: 1rem; border:1; border-color: #DDD!important">Doe Aqui</a>
+					<a href="#menu">login</a>
 				</nav>
 
 			</header>
 
 		<!-- Nav -->
-			<nav id="menu">
+			<nav id="menu" style="padding-bottom: 0!important">
 				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="elements.html">Elements</a></li>
-					<li><a href="generic.html">Generic</a></li>
+					<a href="elements.html" class="icon fa-user" style="font-size: 5rem; color: #DDD; margin-left: 40%"><span class="label">Icon</span></a>
+					<div ">
+					<form>
+					<input type="text" name="name" id="name" value="" placeholder="E-mail" />
+					<input type="text" name="pass" id="pass" value="" placeholder="Senha" style="margin-top: 5px" />
+					<div>
+				 		<li><input id="entrar" type="submit" value="Entrar" class="" style="" /></li>
+				 		<li><input id="cadastro" type="submit" value="cadastre-se"/></li>
+					</div>
+
+					</form>
+					</div>
 				</ul>
 			</nav>
 
