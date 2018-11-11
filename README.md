@@ -1,5 +1,5 @@
-# Amigos da USP
-O Amigos da Usp surgiu com o intuito de fomentar as doações externas à Universidade de São Paulo. 
+# FomentUSP
+O FomentUSP surgiu com o intuito de fomentar as doações externas à Universidade de São Paulo. 
 
 ## Objetivos
 Diante de um cenário de congelamento de gastos em Pesquisa, redução de bolsas de Permanência Estudantil, corte de verba em Cultura e Arte, o projeto viabiliza a entrada de capital externo capaz de suprir parte das necessidades dessas três áreas fundamentais para a USP. 
