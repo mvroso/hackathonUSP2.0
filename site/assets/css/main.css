@@ -2383,7 +2383,7 @@ ul.icons {
       #footer input[type="button"]:hover:active,
       #footer button:hover:active,
       #footer .button:hover:active {
-        background-color: rgba(206, 27, 40, 0.25); }
+        background-color: rgba(40, 27, 206, 0.25); }
     #footer input[type="submit"].primary,
     #footer input[type="reset"].primary,
     #footer input[type="button"].primary,
@@ -2397,7 +2397,7 @@ ul.icons {
       #footer input[type="button"].primary:hover,
       #footer button.primary:hover,
       #footer .button.primary:hover {
-        background-color: #e2212f;
+        background-color: #2f21e2;
         box-shadow: none; }
         #footer input[type="submit"].primary:hover:active,
         #footer input[type="reset"].primary:hover:active,
