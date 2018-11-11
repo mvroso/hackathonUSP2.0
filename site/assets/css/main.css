@@ -2620,7 +2620,7 @@ body {
 
   #header {
     height: 44px;
-    line-height: 44px; } }
+    line-height: 44px; }}
 @media screen and (max-width: 480px) {
   #header {
     min-width: 320px; } }
@@ -2832,6 +2832,7 @@ body {
   -webkit-overflow-scrolling: touch;
   box-shadow: none;
   height: 420px;
+  margin-top:3.25rem;
   max-width: 80%;
   overflow-y: auto;
   padding: 3rem 2rem;
@@ -2955,6 +2956,10 @@ body {
   @media screen and (max-width: 736px) {
     #menu {
       padding: 2.5rem 1.75rem; } }
+  @media screen and (max-width: 980px) {
+    #menu{
+      margin-top: 44px;
+      }}
 
 body.is-menu-visible #menu {
   -moz-transform: translateX(0);
