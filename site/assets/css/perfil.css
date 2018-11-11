@@ -47,7 +47,10 @@
 #nome, #cara{
     display: inline;
 }
-
+#oi, #oi1{
+    border: 300px;
+    margin-left: 300px;
+}
 
 
 
