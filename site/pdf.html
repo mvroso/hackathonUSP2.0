@@ -30,33 +30,42 @@
 		color: #FFF!important;
 
 	}
+
         </style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
-			<header id="header">
-				<a class="logo" href="index.html">FomentUSP</a>
-				<nav>
-					<a href="#menu">Menu</a>
-				</nav>
-			</header>
-            <nav id="perfil">
-				<ul class="links">
-					<li><a href="pdf.html">Acompanhamentos</a></li>
-                    <li><a href="perfilexemplo.html">Perfil</a></li>
-				</ul>
+            <header id="header" style="">
+                <a class="logo" href="index.html">FomentUSP</a>
+
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="projetos.html">Projetos</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a class="selected" href="doacoes.html" align="center" style=" min-width: 150px; font-size: 1rem; border:1; border-color: #DDD!important">Doe Aqui</a>
+                    <a href="#menu">login</a>
+                </nav>
+
+            </header>
+
+        <!-- Nav -->
+            <nav id="menu" style="padding-bottom: 0!important">
+                <ul class="links">
+                    <a href="doacoes.html" class="icon fa-user" style="font-size: 5rem; color: #DDD; margin-left: 40%"><span class="label">Icon</span></a>
+                    <div ">
+                    <form action="perfilexemplo.html">
+                    <input type="text" name="name" id="name" value="" placeholder="E-mail" />
+                    <input type="text" name="pass" id="pass" value="" placeholder="Senha" style="margin-top: 5px" />
+                    <div>
+                        <li><input id="entrar" type="submit" value="Entrar" class="" style="" /></li>
+                        <li><input id="cadastro" type="submit" value="cadastre-se"/></li>
+                    </div>
+
+                    </form>
+                    </div>
+                </ul>
             </nav>
-		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="doacoes.html">Doe Aqui!</a></li>
-					<li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="index.html">Sair</a></li>
-				</ul>
-			</nav>
-        <div>
             <h2 style="text-align: center"> <b>Relatório de Acompanhamento - Apadrinhamento</b></h2>
             <iframe id="oi" style="WIDTH: 600px; HEIGHT: 500px" src="./pdf/relatorio_aluno.pdf" frameBorder=0></iframe>
             <p></p>
