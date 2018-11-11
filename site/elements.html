@@ -6,18 +6,29 @@
 -->
 <html>
 	<head>
-		<title>Elements - Industrious by TEMPLATED</title>
+		<title>Doe aqui!</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <script>
+            function mostrar(elemento){
+                var display = document.getElementById(elemento).style.display;
+                if(display == "none"){
+                    document.getElementById(elemento).style.display = 'block';
+                }
+                else{
+                    document.getElementById(elemento).style.display = 'none';
+                }    
+            }
+        </script>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
-				<a class="logo" href="index.html">Industrious</a>
+				<a class="logo" href="index.html">Amigos da USP</a>
 				<nav>
 					<a href="#menu">Menu</a>
 				</nav>
@@ -34,7 +45,7 @@
 
 		<!-- Heading -->
 			<div id="heading" >
-				<h1>Elements</h1>
+				<h1>Faça sua doação</h1>
 			</div>
 
 		<!-- Main -->
@@ -51,55 +62,36 @@
 						<div class="row">
 							<div class="col-6 col-12-medium">
 								<!-- Text -->
-									<h3>Pessoa Física</h3>
-									<p>Para quem você pode doar?</p>
+                                <ul>
+									<h2>Pessoa Física</h2>
+									<h3>Para quem você pode doar?</h3>
 									<ul> <p>Alunos e docentes com projetos inscritos nas categorias:</p> 
-								        <li>Bolsas de permanência para graduação e pós-graduação;</li>
-                                        <li>Projetos de pesquisa científica;</li>
-                                        <li>Infraestrutura e reformas de salas e laboratórios;</li>
-                                        <li>Projetos culturais e artísticos.</li>
+								        <li><b>Bolsas</b> de permanência para graduação e pós-graduação;</li>
+                                        <li>Projetos de <b>pesquisa científica</b>;</li>
+                                        <li>Infraestrutura e <b>reformas</b> de salas e laboratórios;</li>
+                                        <li>Projetos <b>culturais</b> e artísticos.</li>
                                     </ul>
-                                    <h3>Pessoa Jurídica</h3>
-									<p>Para quem você pode doar?</p>
+                                </ul>
+                                <ul style ="background-color: #ce1b28">
+                                    <h2>Pessoa Jurídica</h2>
 									<ul> <p>Incentive o desenvolvimento tecnológico e cultural com projetos inscritos nas categorias:</p> 
-								        <li>Bolsas de permanência para graduação e pós-graduação;</li>
-                                        <li>Projetos de pesquisa científica;</li>
-                                        <li>Infraestrutura e reformas de salas e laboratórios;</li>
-                                        <li>Projetos culturais e artísticos.</li>
+								        <li><b>Bolsas</b> de permanência para graduação e pós-graduação;</li>
+                                        <li>Projetos de <b>pesquisa científica</b>;</li>
+                                        <li>Infraestrutura e <b>reformas</b> de salas e laboratórios;</li>
+                                        <li>Projetos <b>culturais</b> e artísticos.</li>
                                     </ul>
-                                
-									<h3>Icons</h3>
-									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-									</ul>
-
-
-								<!-- Blockquote -->
-									<h3>Blockquote</h3>
-									<blockquote>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio
-									porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet.
-									Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra. Lorem ipsum
-									dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
-									iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac sed amet praesent. Nunc
-									lacinia ante nunc ac gravida.</blockquote>
-							</div>
+                                </ul>
+                            </div>
 							<div class="col-6 col-12-medium">
-
-								<!-- Buttons -->
-									<ul class="actions fit">
-										<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-									</ul>
 								<!-- Form -->
 									<form method="post" action="#" id="seuformulario" style="display: none">
+                                        <h2>Dados</h2>
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall">
-												<input type="text" name="name" id="name" value="" placeholder="Nomee" />
+												<input type="text" name="name" id="name" value="" placeholder="E-mail" />
 											</div>
 											<div class="col-6 col-12-xsmall">
-												<input type="email" name="email" id="email" value="" placeholder="E-mail" />
+												<input type="email" name="email" id="email" value="" placeholder="Senha" />
 											</div>
 											<div class="col-12">
 												<select name="category" id="category">
@@ -113,62 +105,130 @@
 											<!-- Break -->
 											<div class="col-4 col-12-small">
 												<input type="radio" id="radio-alpha" name="radio" checked>
-												<label for="radio-alpha">Radio alpha</label>
+												<label for="radio-alpha">Boleto</label>
 											</div>
 											<div class="col-4 col-12-small">
 												<input type="radio" id="radio-beta" name="radio">
-												<label for="radio-beta">Radio beta</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="radio-gamma" name="radio">
-												<label for="radio-gamma">Radio gamma</label>
+												<label for="radio-beta">Depósito Bancário</label>
 											</div>
 											<!-- Break -->
 											<div class="col-6 col-12-small">
 												<input type="checkbox" id="checkbox-alpha" name="checkbox">
-												<label for="checkbox-alpha">Checkbox alpha</label>
+												<label for="checkbox-alpha">Quero receber novidades do ADU</label>
+											</div>
+                                            <div class="col-6 col-12-small">
+												<input type="checkbox" id="checkbox-gama" name="checkbox">
+												<label for="checkbox-gama">Quero receber convites para doação</label>
 											</div>
 											<div class="col-6 col-12-small">
 												<input type="checkbox" id="checkbox-beta" name="checkbox" checked>
-												<label for="checkbox-beta">Checkbox beta</label>
+												<label for="checkbox-beta">Quero ser alertado por e-mail sobre os andamentos</label>
 											</div>
 											<!-- Break -->
 											<div class="col-12">
-												<textarea name="textarea" id="textarea" placeholder="Alpha beta gamma delta" rows="6"></textarea>
+												<textarea name="textarea" id="textarea" placeholder="Escreva um comentário" rows="6"></textarea>
 											</div>
 											<!-- Break -->
 											<div class="col-12">
 												<ul class="actions">
-													<li><input type="submit" value="Submit Form" class="primary" /></li>
-													<li><input type="reset" value="Reset" /></li>
+													<li><input type="submit" value="Fazer a Doação" class="primary" /></li>
+													<li><input type="reset" value="Cancelar" /></li>
 												</ul>
 											</div>
 										</div>
 									</form>
-
+                                    <form method="post" action="#" id="seuformulario1" style="display: none">
+                                        <h2>Dados</h2>
+										<div class="row gtr-uniform">
+											<div class="col-6 col-12-xsmall">
+												<input type="text" name="name" id="name" value="" placeholder="E-mail" />
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<input type="email" name="email" id="email" value="" placeholder="Senha" />
+											</div>
+											<div class="col-12">
+												<select name="category" id="category">
+													<option value="">- Selecione o donatário -</option>
+													<option value="alpha">Bolsas de permanência</option>
+													<option value="beta">Projetos Científicos</option>
+													<option value="gamma">Infraestrutura e Reforma</option>
+													<option value="delta">Cultura e Arte</option>
+												</select>
+											</div>
+											<!-- Break -->
+											<div class="col-4 col-12-small">
+												<input type="radio" id="radio-alpha" name="radio" checked>
+												<label for="radio-alpha">Cartão de Crédito</label>
+											</div>
+											<div class="col-4 col-12-small">
+												<input type="radio" id="radio-beta" name="radio">
+												<label for="radio-beta">Depósito Bancário</label>
+											</div>
+											<!-- Break -->
+											<div class="col-6 col-12-small">
+												<input type="checkbox" id="checkbox-alpha" name="checkbox">
+												<label for="checkbox-alpha">Quero receber novidades do ADU</label>
+											</div>
+                                            <div class="col-6 col-12-small">
+												<input type="checkbox" id="checkbox-gama" name="checkbox">
+												<label for="checkbox-gama">Quero receber convites para doação</label>
+											</div>
+											<div class="col-6 col-12-small">
+												<input type="checkbox" id="checkbox-beta" name="checkbox" checked>
+												<label for="checkbox-beta">Quero ser alertado por e-mail sobre os andamentos</label>
+											</div>
+											<!-- Break -->
+											<div class="col-12">
+												<textarea name="textarea" id="textarea" placeholder="Escreva um comentário" rows="6"></textarea>
+											</div>
+											<!-- Break -->
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" value="Fazer a Doação" class="primary" /></li>
+													<li><input type="reset" value="Cancelar" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
 				
 
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
-
+            </div>
+        </section>
+        <div style="background-color: white" style="margin-top: 0px">
+        <section class="wrapper">
+            <div class="inner">
+                <header class="special">
+                    <h2>Conheça os nossos doadores</h2>
+                    <p>Junte-se a essa comunidade!</p>
+                </header>
+                <div class="scrollmenu" align="center" style="overflow-x: hidden;">
+                  <img src="images/rcgi.png">
+                  <img src="images/bradesco.png" style="max-height: 75px">
+                  <img src="images/sansung.png" style="max-height: 75px">
+                  <img src="images/logo-big-data.png" style="max-height: 75px">
+                  <img src="images/arrow.png" style="max-height: 75px">
+                </div>
+             </div>
+        </section>
+            </div>
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
 					<div class="content">
 						<section>
-							<h3>Accumsan montes viverra</h3>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
+							<h3>Amigos da USP</h3>
+							<p>Com o intuito de fomentar às doações na Universidade de São Paulo, foi criada a plataforma Amigos da USP, em que é possível acompanhar os avanços em Ciência, Permanência e Cultura da Universidade.</p>
 						</section>
 						<section>
-							<h4>Sem turpis amet semper</h4>
+							<h4>Contato</h4>
 							<ul class="alt">
-								<li><a href="#">Dolor pulvinar sed etiam.</a></li>
-								<li><a href="#">Etiam vel lorem sed amet.</a></li>
-								<li><a href="#">Felis enim feugiat viverra.</a></li>
-								<li><a href="#">Dolor pulvinar magna etiam.</a></li>
+								<li><a href="#">Telefone: (11) 3875-5840</a></li>
+								<li><a href="#">E-mail: faq@adu.com.br</a></li>
+								<li><a href="#">Endereço: Rua do Matão, 3100</a></li>
 							</ul>
 						</section>
 						<section>
@@ -177,7 +237,6 @@
 								<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
 								<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
 								<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
-								<li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
 							</ul>
 						</section>
 					</div>
