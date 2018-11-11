@@ -12,23 +12,56 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style type="text/css">
+			#entrar{
+		height: 40px !important; box-shadow: none!important; background-color: 000!important; width: 100%; margin-top: 5px;
+		background-color: #121212;
+		border-color: rgba(0,0,0,0.25);
+	}
+	#cadastro{
+		height: 40px !important; border: 0!important; box-shadow: none!important; background-color: 000!important; width: 100%; margin-top: 5px;
+		background-color: #121212;
+
+		border-color: rgba(0,0,0,0.25);
+	}
+	#cadastro:hover, #entrar:hover{
+		background-color: #222!important;
+		color: #FFF!important;
+
+	}
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
-			<header id="header">
+			<header id="header" style="">
 				<a class="logo" href="index.html">AMIGOS DA USP</a>
+
 				<nav>
-					<a href="#menu">Menu</a>
+					<a href="index.html">Home</a>
+					<a href="projetos.html">Projetos</a>
+					<a href="sobre.html">Sobre</a>
+					<a href="doacoes.html" align="center" style=" min-width: 150px; font-size: 1rem; border:1; border-color: #DDD!important">Doe Aqui</a>
+					<a href="#menu">login</a>
 				</nav>
+
 			</header>
 
 		<!-- Nav -->
-			<nav id="menu">
+			<nav id="menu" style="padding-bottom: 0!important">
 				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="doacoes.html">Elements</a></li>
-					<li><a href="sobre.html">Generic</a></li>
+					<a href="doacoes.html" class="icon fa-user" style="font-size: 5rem; color: #DDD; margin-left: 40%"><span class="label">Icon</span></a>
+					<div ">
+					<form action="perfilexemplo.html">
+					<input type="text" name="name" id="name" value="" placeholder="E-mail" />
+					<input type="text" name="pass" id="pass" value="" placeholder="Senha" style="margin-top: 5px" />
+					<div>
+				 		<li><input id="entrar" type="submit" value="Entrar" class="" style="" /></li>
+				 		<li><input id="cadastro" type="submit" value="cadastre-se"/></li>
+					</div>
+
+					</form>
+					</div>
 				</ul>
 			</nav>
 
@@ -71,7 +104,7 @@
 							<ul class="alt">
 								<li><a href="#">Telefone: (11) 3875-5840</a></li>
 								<li><a href="#">E-mail: faq@adu.com.br</a></li>
-								<li><a href="#">Endereço: Rua do Matão, 3100</a></li>
+								<li><a href="https://www.google.com.br/maps/place/R.+do+Matão,+3100+-+Butantã,+São+Paulo+-+SP,+03178-200/@-23.5595101,-46.7401001,17z">Endereço: Rua do Matão, 3100</a></li>
                                 <li><a href="respaldo.html">Respaldo Jurídico</a></li>
 							</ul>
 						</section>
